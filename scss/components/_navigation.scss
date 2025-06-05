@@ -1,0 +1,39 @@
+.container-navigation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 422px;
+  height: 482px;
+  background-color: var(--main-dark-color);
+  background-image: url(../image/background-modal.png);
+  border-radius: 32px;
+}
+
+.subtitle-navigation {
+  margin: 48px 75px 32px 75px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: var(--color-footer-light);
+}
+
+.subtitle-navigation span {
+  color: var(--main-blue-color);
+}
+
+.form-field-navigation {
+  margin: 0 57px 16px 57px;
+  max-width: 310px;
+}
+
+.form-label-navigation {
+  display: block;
+  text-align: center;
+}
+
+.map {
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 32px;
+}

@@ -1,0 +1,78 @@
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-top {
+  flex-basis: 50%;
+  display: flex;
+  gap: 50px;
+}
+
+.footer-contacts {
+  flex-basis: 50%;
+  display: flex;
+  gap: 200px;
+}
+
+.footer-logo,
+.footer-list {
+  flex-grow: 1;
+}
+
+.footer-contacts {
+  flex-grow: 1;
+}
+
+.footer {
+  background-image: url(../image/background-footer.png);
+  background-color: var(--main-dark-color);
+  position: relative;
+  color: var(--color-footer-light);
+  padding: 56px;
+}
+
+.footer a {
+  color: var(--color-footer-light);
+  text-decoration: none;
+}
+
+.accent-footer {
+  color: var(--secondary-light-color);
+  font-size: 13px;
+}
+
+.link-footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.link-footer:hover {
+  color: var(--main-blue-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.adress-icon {
+  fill: var(--color-footer-light);
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.images-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 247px;
+  height: 152px;
+}
+
+.footer-politic {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

@@ -1,0 +1,83 @@
+.title-form {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: var(--color-footer-light);
+}
+
+.subtitle-form {
+  margin: 40px 70px 32px 70px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: var(--color-footer-light);
+}
+
+.subtitle-form span {
+  color: var(--main-blue-color);
+}
+
+.form-field {
+  margin: 0 62.5px 24px 62.5px;
+  max-width: 310px;
+}
+
+.form-label {
+  display: block;
+  text-align: center;
+}
+
+.form-input:hover {
+  background-color: var(--secondary-light-color);
+}
+
+.form-input {
+  padding: 18px 33px;
+  line-height: 1.17;
+  width: 100%;
+  background-color: transparent;
+  font-size: 13px;
+  border: 2px solid var(--secondary-light-color);
+  border-radius: 32px;
+}
+
+.form-input:focus {
+  border-color: var(--secondary-light-color);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-footer-light);
+  font-size: 13px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-footer-light);
+}
+
+.form-input:not(:placeholder-shown) {
+  color: var(--color-footer-light);
+}
+
+.form-buttom {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 215px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--secondary-light-color);
+}
+
+.form-terms-link {
+  color: var(--secondary-light-color);
+  text-underline-offset: 2px;
+}

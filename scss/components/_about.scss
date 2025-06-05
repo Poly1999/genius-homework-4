@@ -1,0 +1,61 @@
+.about-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  padding-top: 40px;
+}
+
+.about-subtitle {
+  font-size: 22px;
+  line-height: 1.73;
+}
+
+.subtitle-about {
+  padding: 40px 0px;
+}
+
+.about-subtitle span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.about-container {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.about {
+  padding-bottom: 176px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.star-1 {
+  fill: var(--color-star-1);
+  position: absolute;
+  right: 160px;
+  top: 380px;
+}
+
+.star-2 {
+  fill: var(--main-blue-color);
+  transform: translate(500px, -630px);
+}
+
+.star-3 {
+  fill: var(--secondary-light-color);
+  transform: translate(430px, -410px);
+}
+
+.img-about-before {
+  border-radius: 50%;
+}
+
+.img-about-after {
+  border-radius: 50%;
+  transform: translate(172px, 40px);
+}

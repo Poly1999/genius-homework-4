@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Beauty Zone</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -55,12 +55,12 @@
       </div>
     </header>
     <main>
-      <section class="section-title">
+      <section class="hero-section">
         <div class="container">
-          <div class="section-1-container">
-            <div class="title-container">
+          <div class="hero-container">
+            <div class="main-title-hero">
               <p>Косметологічна клініка</p>
-              <h1 class="section1-title" lang="en">
+              <h1 class="hero-title" lang="en">
                 Beauty <br />
                 zone
               </h1>
@@ -68,7 +68,7 @@
                 <button class="button modal-btn-open" type="button">
                   Замовити дзвінок
                 </button>
-                <p class="section1-subtitle">
+                <p class="hero-subtitle">
                   Запишись та отримай безкоштовну <br />
                   консультацію нашого косметолога
                 </p>
@@ -80,16 +80,16 @@
       <section class="about" id="about">
         <div class="container">
           <div class="about-container">
-            <div class="content-container">
-              <h2 class="section2-title">
+            <div class="about-section">
+              <h2 class="about-title">
                 Перевтілюйтесь
                 <span class="accent-section1">Beauty Zone!</span>
               </h2>
-              <p class="section2-subtitle subtitle-section2">
+              <p class="about-subtitle subtitle-about">
                 Наша косметологічна клініка пропонує вам професійні послуги з
                 догляду за шкірою обличчя та тіла.
               </p>
-              <p class="section2-subtitle">
+              <p class="about-subtitle">
                 B <span lang="en">beauty zone</span> ми гарантуємо найвищі
                 стандарти якості та приємний сервіс. Наші косметологічні
                 процедури та препарати допоможуть вам підтримувати свою красу та
@@ -98,12 +98,12 @@
             </div>
             <div class="img-container">
               <img
-                class="img-section-2-before"
+                class="img-about-before"
                 src="./image/womenbefore.jpg"
                 alt="Women before procedure"
               />
               <img
-                class="img-section-2-after"
+                class="img-about-after"
                 src="./image/womenafter.jpg"
                 alt="Same women after procedure"
               />
@@ -122,10 +122,10 @@
       </section>
       <section class="sections" id="why-people-choose-us">
         <div class="container">
-          <div class="section-3-container">
-            <h2 class="section3-title">
+          <div class="whypeople-container">
+            <h2 class="whycontent-title">
               Чому люди <br />
-              <span class="accent-section3">обирають нас</span>
+              <span>обирають нас</span>
             </h2>
             <ul class="whycontent-list">
               <li class="whycontent-container">
@@ -134,7 +134,7 @@
                     <use href="./image/icons.svg#icon-icon_for_section31"></use>
                   </svg>
                 </h3>
-                <p class="section3-paragraph">
+                <p>
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </p>
@@ -146,7 +146,7 @@
                     <use href="./image/icons.svg#icon-icon_for_section32"></use>
                   </svg>
                 </h3>
-                <p class="section3-paragraph">
+                <p>
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </p>
@@ -158,7 +158,7 @@
                     <use href="./image/icons.svg#icon-icon_for_section33"></use>
                   </svg>
                 </h3>
-                <p class="section3-paragraph">
+                <p>
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
                 </p>
@@ -169,7 +169,7 @@
       </section>
       <section class="sections" id="our-procedures">
         <div class="container">
-          <h2 class="section3-title">
+          <h2 class="procedure-title">
             Наші <span class="accent-section4">процедури</span>
           </h2>
           <div class="procedure-container">
@@ -179,31 +179,40 @@
               </svg>
             </button>
             <ul class="procedure-list">
-              <li>
-                <article>
-                  <img
-                    class="img-section-4"
+              <li class="procedure-item">
+                <article class="procedure-card">
+                  <div class="procedure-wrapper" >
+                    <img
+                    class="procedure-image"
                     src="./image/womenwithmask.jpg"
                     alt="Women making mask on her face"
                   />
+                  <h3 class="procedure-text" >Маски для обличчя</h3>
+                  </div>
                 </article>
               </li>
-              <li>
-                <article>
-                  <img
-                    class="img-section-4"
+              <li class="procedure-item">
+                <article class="procedure-card" >
+                  <div class="procedure-wrapper" >
+                    <img
+                    class="procedure-image"
                     src="./image/womenbotex.jpg"
                     alt="Women making a botox on her face"
                   />
+                  <h3 class="procedure-text" >Ін'єкції для обличчя</h3>
+                  </div>
                 </article>
               </li>
-              <li>
-                <article>
-                  <img
-                    class="img-section-4"
+              <li class="procedure-item">
+                <article class="procedure-card" >
+                  <div class="procedure-wrapper" >
+                    <img
+                    class="procedure-image"
                     src="./image/womenelectro.jpg"
                     alt="Women making ultrasonic face lift"
                   />
+                  <h3 class="procedure-text" >Очищення обличчя</h3>
+                  </div>
                 </article>
               </li>
             </ul>
@@ -217,10 +226,10 @@
       </section>
       <section class="sections" id="contacts">
         <div class="container">
-          <h2 class="section3-title">
-            Як нас <span class="accent-section5">знайти</span>
+          <h2 class="contacts-title">
+            Як нас <span>знайти</span>
           </h2>
-          <div class="container-section-5">
+          <div class="container-about">
             <iframe
               class="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857434!2d30.772648477023242!3d50.50671678331028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2sTarasa%20Shevchenka%20St%2C%205%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%20Ukraine%2C%2007400!5e0!3m2!1sen!2sus!4v1746666359437!5m2!1sen!2sus"

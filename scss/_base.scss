@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--main-dark-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-image: url(../image/background-vector.png);
+  background-position: 0 1500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+ul {
+  list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Sections */
+
+h2 .accent-section1 {
+  color: var(--main-blue-color);
+}
+
+h2 .accent-section3 {
+  color: var(--main-blue-color);
+}
+
+h2 .accent-section4 {
+  color: var(--main-blue-color);
+}
+
+h2 .accent-section5 {
+  color: var(--main-blue-color);
+}
+
+.sections {
+  padding-bottom: 96px;
+}

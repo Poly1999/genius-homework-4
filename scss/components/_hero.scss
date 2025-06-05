@@ -1,0 +1,36 @@
+.hero-section {
+  background-image: url(../image/background.png);
+  padding: 106px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-title-hero {
+  width: 529px;
+  height: 408px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 113px 605px 138px 106px;
+}
+
+.hero-title {
+  padding-top: 16px;
+  padding-bottom: 40px;
+  color: var(--main-blue-color);
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.hero-subtitle {
+  color: var(--secondary-dark-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-top: 14px;
+}

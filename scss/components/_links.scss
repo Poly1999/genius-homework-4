@@ -1,0 +1,10 @@
+.link {
+  color: var(--main-dark-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--main-blue-color);
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,43 @@
+.header {
+  padding: 32px 100px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 10;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+/* Меню */
+.nav-menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Контактні іконки */
+.header-contacts {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  fill: var(--main-dark-color);
+}

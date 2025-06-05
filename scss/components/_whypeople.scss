@@ -1,0 +1,49 @@
+.whypeople-container {
+  padding: 0 190px;
+}
+
+.whycontent-title {
+  margin-bottom: 48px;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: var(--main-dark-color);
+}
+
+.whycontent-title span {
+  color: var(--main-blue-color);
+}
+
+.whycontent-list {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 56px;
+  flex-basis: calc(100% - 56px / 3);
+}
+
+.whycontent-container {
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  width: 316px;
+  height: 181px;
+  background-color: var(--color-footer-light);
+  flex-shrink: 0;
+}
+
+.card-container {
+  display: flex;
+  padding: 24px 32px;
+  border: 1px solid var(--main-blue-color);
+  background: var(--color-footer-light);
+  border-radius: 32px;
+  text-align: center;
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  fill: var(--main-blue-color);
+  margin-bottom: 10px;
+}
