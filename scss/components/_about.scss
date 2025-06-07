@@ -39,16 +39,57 @@
   position: absolute;
   right: 160px;
   top: 380px;
+  animation-name: zoom;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .star-2 {
   fill: var(--main-blue-color);
   transform: translate(500px, -630px);
+  animation: zoom-star-2 2s infinite;
+}
+
+@keyframes zoom-star-2 {
+  0% {
+    transform: translate(500px, -630px) scale(1);
+  }
+  50% {
+    transform: translate(500px, -630px) scale(1.2);
+  }
+  100% {
+    transform: translate(500px, -630px) scale(1);
+  }
 }
 
 .star-3 {
   fill: var(--secondary-light-color);
   transform: translate(430px, -410px);
+  animation: zoom-star-3 1s infinite;
+}
+
+@keyframes zoom-star-3 {
+  0% {
+    transform: translate(430px, -410px) scale(1);
+  }
+  50% {
+    transform: translate(430px, -410px) scale(1.2);
+  }
+  100% {
+    transform: translate(430px, -410px) scale(1);
+  }
 }
 
 .img-about-before {

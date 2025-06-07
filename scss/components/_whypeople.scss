@@ -2,6 +2,15 @@
   padding: 0 190px;
 }
 
+.whycontent-container p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #000;
+}
+
 .whycontent-title {
   margin-bottom: 48px;
   font-family: 'Play', sans-serif;
@@ -30,6 +39,7 @@
   height: 181px;
   background-color: var(--color-footer-light);
   flex-shrink: 0;
+  padding: 24px 32px;
 }
 
 .card-container {
@@ -45,5 +55,4 @@
   width: 44px;
   height: 44px;
   fill: var(--main-blue-color);
-  margin-bottom: 10px;
 }
