@@ -11,9 +11,10 @@
   color: var(--main-blue-color);
 }
 
-.container-about {
+.container-contacts {
   display: flex;
   gap: 32px;
+  justify-content: center;
 }
 
 .section5-paragraph {
