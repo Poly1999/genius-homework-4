@@ -1,38 +1,45 @@
-.whypeople-container {
-  padding: 0 190px;
+.why__container {
+  padding: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 0 190px;
+  }
 }
 
-.whycontent-container p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.33;
-  text-align: center;
-  color: #000;
-}
-
-.whycontent-title {
-  margin-bottom: 48px;
+.why__title {
+  margin-bottom: 24px;
   font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-size: 64px;
+  font-weight: 500;
+  font-size: 32px;
   text-align: center;
   color: var(--main-dark-color);
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 64px;
+  }
 }
 
-.whycontent-title span {
+.why__title--accent {
   color: var(--main-blue-color);
 }
 
-.whycontent-list {
+.why__list {
   display: flex;
+  flex-direction: column;
+  gap: 16px;
   text-align: center;
   justify-content: center;
-  gap: 56px;
   flex-basis: calc(100% - 56px / 3);
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    gap: 56px;
+  }
 }
 
-.whycontent-container {
+.why__item {
   border-radius: 32px;
   box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
   width: 316px;
@@ -42,16 +49,16 @@
   padding: 24px 32px;
 }
 
-.card-container {
-  display: flex;
-  padding: 24px 32px;
-  border: 1px solid var(--main-blue-color);
-  background: var(--color-footer-light);
-  border-radius: 32px;
+.why__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
   text-align: center;
+  color: #000;
 }
 
-.card-icon {
+.why__icon {
   width: 44px;
   height: 44px;
   fill: var(--main-blue-color);

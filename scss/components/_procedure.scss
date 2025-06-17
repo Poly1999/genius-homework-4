@@ -1,81 +1,23 @@
-.background {
-  position: relative;
-  z-index: 0;
-}
+.prosedure-section {
+  &__slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
 
-.background {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-}
+  &__container {
+    overflow: hidden;
+  }
 
-.procedure-container {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  justify-content: center;
-}
+  &__list {
+    margin-bottom: 32px;
+  }
 
-.procedure-list {
-  display: flex;
-  gap: 16px;
-}
-.procedure-title {
-  margin-bottom: 48px;
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-}
+  &__button {
+    display: none;
 
-.procedure-list {
-  display: flex;
-  gap: 16px;
-}
-
-.procedure-item {
-  flex-basis: calc((100% - 40px) / 3);
-  flex-wrap: wrap;
-}
-
-.procedure-card {
-  height: 444px;
-  background: linear-gradient(
-    180deg,
-    rgba(1, 28, 68, 0) 47.4%,
-    rgba(1, 28, 68, 0.73) 82.66%,
-    #011c44 99.06%
-  );
-  transition: transform 0.3s;
-  border-radius: 4px 120px;
-}
-
-.procedure-image {
-  display: block;
-  border-radius: 4px 120px;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.procedure-wrapper {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.procedure-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.18;
-  text-align: center;
-  color: var(--color-footer-light);
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
 }

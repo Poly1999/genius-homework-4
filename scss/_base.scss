@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   background-image: url(../image/background-vector.png);
-  background-position: 0 1500px;
+  background-position: 0 1300px;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -23,12 +23,6 @@ ul {
 
 address {
   font-style: normal;
-}
-
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .logo img {
@@ -51,8 +45,4 @@ h2 .accent-section4 {
 
 h2 .accent-section5 {
   color: var(--main-blue-color);
-}
-
-.sections {
-  padding-bottom: 96px;
 }
