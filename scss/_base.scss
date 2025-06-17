@@ -12,13 +12,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   background-image: url(../image/background-vector.png);
-  background-position: 0 700px;
+  background-position: 0 1300px;
   background-repeat: no-repeat;
-
-  @media screen and (min-width: $bp-desktop) {
-    background-position: 0 1300px;
-    background-size: contain;
-  }
+   background-size: contain;
 }
 
 ul {
