@@ -1,56 +1,62 @@
-.contacts-title {
-  margin-bottom: 48px;
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
-  color: var(--main-dark-color);
-}
+.contact-section {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 
-.contacts-title span {
-  color: var(--main-blue-color);
-}
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
 
-.container-contacts {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-}
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 423px;
+    height: 480px;
+    align-items: center;
+    padding: 48px 56px;
+    border-radius: 32px;
+    background-color: var(--main-dark-color);
+    background-image: url('./image/background-modal.png');
+  }
 
-.section5-paragraph {
-  color: var(--color-footer-light);
-  font-weight: 600;
-  font-size: 22px;
-  text-align: center;
-  margin: 32px;
-  padding: 48px 75px 381px 74px;
-}
+  &__form-field {
+    margin-bottom: 16px;
+  }
 
-.section5-paragraph span {
-  color: var(--main-blue-color);
-}
+  &__text {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-footer-light);
+  }
 
-.section-5-subtitle {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  color: var(--color-footer-light);
-}
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+  }
 
-.section-5-subtitle span {
-  color: var(--main-blue-color);
-}
+  &__map {
+    flex-shrink: 0;
+    margin: 0 -24px;
+    height: 230px;
+    border: 0;
+    border-radius: 32px;
 
-.section-5 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--secondary-light-color);
-}
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 320px;
+      height: 400px;
+    }
 
-.section-5 span {
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 480px;
+    }
+  }
 }

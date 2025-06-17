@@ -1,13 +1,14 @@
-.about {
-  padding-bottom: 104px;
+.about-section {
+  padding-bottom: 84px;
 
   @media screen and (min-width: $bp-tablet) {
-    padding-bottom: 176px;
+    padding-bottom: 156px;
   }
 
   &__container {
     display: flex;
     gap: 50px;
+    justify-content: center;
   }
 
   &__content {
@@ -21,20 +22,6 @@
       max-width: 710px;
       gap: 40px;
     }
-  }
-
-  &__title {
-    font-weight: 500;
-    font-size: 32px;
-
-    @media screen and (min-width: $bp-tablet) {
-      font-weight: 700;
-      font-size: 64px;
-    }
-  }
-
-  &__accent {
-    color: var(--main-blue-color);
   }
 
   &__text {
@@ -87,40 +74,40 @@
         }
       }
     }
+  }
 
-    &--2 {
-      fill: var(--main-blue-color);
-      position: absolute;
-      top: 40px;
-      left: 450px;
-      animation: zoom-star-2 2s infinite;
+  &--2 {
+    fill: var(--main-blue-color);
+    position: absolute;
+    top: 40px;
+    left: 450px;
+    animation: zoom-star-2 2s infinite;
 
-      @keyframes zoom-star-2 {
-        0%,
-        100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.2);
-        }
+    @keyframes zoom-star-2 {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
       }
     }
+  }
 
-    &--3 {
-      fill: var(--secondary-light-color);
-      position: absolute;
-      top: 270px;
-      left: 430px;
-      animation: zoom-star-3 1s infinite;
+  &--3 {
+    fill: var(--secondary-light-color);
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    animation: zoom-star-3 1s infinite;
 
-      @keyframes zoom-star-3 {
-        0%,
-        100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.2);
-        }
+    @keyframes zoom-star-3 {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
       }
     }
   }

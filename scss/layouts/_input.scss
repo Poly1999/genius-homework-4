@@ -1,0 +1,37 @@
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+  }
+
+  &__control {
+    padding: 18px 33px;
+    font-size: 13px;
+    width: 100%;
+    border: 2px solid var(--secondary-light-color);
+    border-radius: 32px;
+    background-color: transparent;
+
+    &:hover {
+      color: var(--color-footer-light);
+      background-color: var(--secondary-light-color);
+    }
+
+    &:focus {
+      border-color: var(--secondary-light-color);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-footer-light);
+      font-size: 13px;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-footer-light);
+    }
+  }
+}

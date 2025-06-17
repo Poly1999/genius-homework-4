@@ -4,7 +4,6 @@
   justify-content: flex-end;
   position: relative;
   height: 444px;
-  max-width: 330px;
   padding: 24px;
   background-image: linear-gradient(
     180deg,
@@ -29,8 +28,4 @@
     text-align: center;
     color: var(--color-footer-light);
   }
-}
-
-.swiper-slide {
-  max-width: 330px;
 }

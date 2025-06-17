@@ -34,9 +34,9 @@
   font-weight: 600;
   font-size: 18px;
   padding: 16px 32px;
-}
 
-.button-apply:hover {
-  color: var(--main-blue-color);
-  background-color: transparent;
+  &:hover {
+    color: var(--main-blue-color);
+    background-color: transparent;
+  }
 }
