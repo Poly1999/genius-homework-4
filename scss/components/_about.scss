@@ -2,7 +2,7 @@
   padding-bottom: 84px;
 
   @media screen and (min-width: $bp-tablet) {
-    padding-bottom: 156px;
+    padding-bottom: 16px;
   }
 
   &__container {
@@ -52,63 +52,6 @@
 
     &--after {
       transform: translate(172px, 40px);
-    }
-  }
-
-  &__star {
-    position: absolute;
-    animation: zoom 3s infinite;
-
-    &--1 {
-      fill: var(--color-star-1);
-      right: 300px;
-      top: 380px;
-
-      @keyframes zoom {
-        0%,
-        100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.2);
-        }
-      }
-    }
-  }
-
-  &--2 {
-    fill: var(--main-blue-color);
-    position: absolute;
-    top: 40px;
-    left: 450px;
-    animation: zoom-star-2 2s infinite;
-
-    @keyframes zoom-star-2 {
-      0%,
-      100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-    }
-  }
-
-  &--3 {
-    fill: var(--secondary-light-color);
-    position: absolute;
-    top: 270px;
-    left: 430px;
-    animation: zoom-star-3 1s infinite;
-
-    @keyframes zoom-star-3 {
-      0%,
-      100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
     }
   }
 }

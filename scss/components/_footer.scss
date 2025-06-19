@@ -1,83 +1,95 @@
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-top {
-  flex-basis: 50%;
-  display: flex;
-  gap: 50px;
-}
-
-.footer-contacts {
-  flex-basis: 50%;
-  display: flex;
-  gap: 200px;
-}
-
-.footer-logo,
-.footer-list {
-  flex-grow: 1;
-}
-
-.footer-list {
-  line-height: 1.6;
-}
-
-.footer-contacts {
-  flex-grow: 1;
-  line-height: 1.6;
-}
-
 .footer {
   background-image: url(../image/background-footer.png);
   background-color: var(--main-dark-color);
   position: relative;
   color: var(--color-footer-light);
   padding: 56px;
-}
 
-.footer a {
-  color: var(--color-footer-light);
-  text-decoration: none;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-.accent-footer {
-  color: var(--secondary-light-color);
-  font-size: 13px;
-}
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
 
-.link-footer {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
+  &__top {
+    flex-basis: 50%;
+    display: flex;
+    gap: 50px;
 
-.link-footer:hover {
-  color: var(--main-blue-color);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+    }
+  }
 
-.adress-icon {
-  fill: var(--color-footer-light);
-}
+  &__logo,
+  &__list {
+    flex-grow: 1;
+  }
 
-.footer-icons {
-  display: flex;
-}
+  &__list {
+    line-height: 1.6;
+  }
 
-.images-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 247px;
-  height: 152px;
-}
+  &__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-footer-light);
+    text-decoration: none;
 
-.footer-politic {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+    &:hover {
+      color: var(--main-blue-color);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  &__contacts {
+    flex-basis: 50%;
+    display: flex;
+    gap: 200px;
+    flex-grow: 1;
+    line-height: 1.6;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__adress {
+    fill: var(--color-footer-light);
+  }
+
+  &__politic {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__accent {
+    color: var(--secondary-light-color);
+    font-size: 13px;
+  }
+
+  &__images {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 247px;
+    height: 152px;
+  }
 }

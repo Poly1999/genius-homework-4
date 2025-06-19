@@ -1,0 +1,59 @@
+.sticker-section {
+  position: absolute;
+  animation: zoom 3s infinite;
+
+  &__star-one {
+    fill: var(--color-star-1);
+    right: 120px;
+    top: 200px;
+
+    @media screen and (min-width: $bp-desktop) {
+      right: 300px;
+      top: 380px;
+    }
+  }
+
+  &__star-two {
+    fill: var(--main-blue-color);
+    position: absolute;
+    top: 40px;
+    left: 450px;
+  }
+
+  &__star-three {
+    fill: var(--secondary-light-color);
+    position: absolute;
+    top: 270px;
+    left: 430px;
+  }
+}
+
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoom-star-2 {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoom-star-3 {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
