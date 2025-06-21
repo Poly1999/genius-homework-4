@@ -9,11 +9,17 @@
   justify-content: center;
   background-color: rgba(1, 31, 74, 0.4);
   transition: opacity 0.3s, visibility 0.3s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal {
   position: relative;
-  padding: 45px 142px;
+  padding: 20px 100px;
   width: 100%;
   max-width: 720px;
   height: 100%;
@@ -21,16 +27,19 @@
   background-color: var(--main-dark-color);
   background-image: url(../image/background-modal.png);
   border-radius: 48px;
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 45px 142px;
+  }
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+
+  &__icon {
+    fill: var(--color-footer-light);
+    background-color: transparent;
+  }
 }

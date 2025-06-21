@@ -18,10 +18,15 @@
     max-width: 423px;
     height: 480px;
     align-items: center;
+    order: -1;
     padding: 48px 56px;
     border-radius: 32px;
     background-color: var(--main-dark-color);
-    background-image: url('./image/background-modal.png');
+    background-image: url(../image/background-modal.png);
+
+    @media screen and (min-width: $bp-tablet) {
+      order: 0;
+    }
   }
 
   &__form-field {
@@ -45,13 +50,14 @@
     flex-shrink: 0;
     margin: 0 -24px;
     height: 230px;
-    border: 0;
-    border-radius: 32px;
+    order: 0;
 
     @media screen and (min-width: $bp-tablet) {
       margin: auto;
       width: 320px;
       height: 400px;
+      border-radius: 32px;
+      order: 0;
     }
 
     @media screen and (min-width: $bp-desktop) {

@@ -3,27 +3,37 @@
   background-color: var(--main-dark-color);
   position: relative;
   color: var(--color-footer-light);
-  padding: 56px;
+  padding: 32px 91px 66px 91px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 56px;
+  }
 
   &__container {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    text-align: center;
 
     @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
     }
   }
 
   &__top {
-    flex-basis: 50%;
     display: flex;
-    gap: 50px;
+    flex-basis: 50%;
+    flex-direction: column;
+    gap: 42px;
 
     @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
       flex-basis: 50%;
       text-align: left;
+      gap: 50px;
     }
   }
 
@@ -52,22 +62,34 @@
   }
 
   &__contacts {
-    flex-basis: 50%;
     display: flex;
-    gap: 200px;
+    flex-basis: 50%;
+    flex-direction: column;
+
     flex-grow: 1;
     line-height: 1.6;
+    align-items: center;
+    text-align: center;
 
     @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
       flex-basis: 50%;
       text-align: left;
+      gap: 200px;
+    }
+  }
+
+  &__info {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
     }
   }
 
   &__icons {
     display: flex;
     gap: 24px;
+    align-items: center;
   }
 
   &__adress {
@@ -78,6 +100,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    align-items: center;
   }
 
   &__accent {
@@ -86,10 +109,14 @@
   }
 
   &__images {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 247px;
-    height: 152px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 247px;
+      height: 152px;
+    }
   }
 }
