@@ -15,16 +15,19 @@
   &__form {
     display: flex;
     flex-direction: column;
-    max-width: 423px;
-    height: 480px;
+    max-width: 350px;
+    height: 450px;
     align-items: center;
     order: -1;
-    padding: 48px 56px;
+    padding: 15px;
     border-radius: 32px;
     background-color: var(--main-dark-color);
     background-image: url(../image/background-modal.png);
 
     @media screen and (min-width: $bp-tablet) {
+      max-width: 423px;
+      height: 480px;
+      padding: 48px 56px;
       order: 0;
     }
   }
