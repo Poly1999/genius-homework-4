@@ -12,6 +12,12 @@
       gap: 32px;
       margin-bottom: 20px;
     }
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 50px;
+      margin-bottom: 20px;
+    }
   }
 
   &__form {
@@ -19,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 310px;
+    width: 310px;
     height: 450px;
     order: -1;
     padding: 40px 20px;
@@ -35,7 +41,7 @@
     }
 
     @media screen and (min-width: $bp-desktop) {
-      max-width: 423px;
+      width: 420px;
       height: 480px;
       padding: 48px 56px;
       order: 0;
@@ -46,12 +52,12 @@
     margin-bottom: 20px;
     width: 240px;
     height: 45px;
-  }
 
-  @media screen and (min-width: $bp-desktop) {
-    margin-bottom: 16px;
-    width: 310px;
-    height: 50px;
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+      width: 310px;
+      height: 50px;
+    }
   }
 
   &__text {

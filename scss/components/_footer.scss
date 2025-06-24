@@ -68,14 +68,14 @@
 
     flex-grow: 1;
     line-height: 1.6;
-    align-items: center;
+
     text-align: center;
 
     @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
       flex-basis: 50%;
       text-align: left;
-      gap: 200px;
+      gap: 150px;
     }
   }
 
