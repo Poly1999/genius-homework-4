@@ -1,12 +1,13 @@
 .backdrop {
+  display: flex;
   position: fixed;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 10;
   background-color: rgba(1, 31, 74, 0.4);
   transition: opacity 0.3s, visibility 0.3s;
 
@@ -19,16 +20,28 @@
 
 .modal {
   position: relative;
-  padding: 20px 100px;
+  padding: 20px 20px;
   width: 100%;
-  max-width: 720px;
+  max-width: 300px;
   height: 100%;
-  max-height: 680px;
+  max-height: 470px;
   background-color: var(--main-dark-color);
   background-image: url(../image/background-modal.png);
   border-radius: 48px;
 
   @media screen and (min-width: $bp-tablet) {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 550px;
+    padding: 45px 142px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    width: 100%;
+    max-width: 720px;
+    height: 100%;
+    max-height: 680px;
     padding: 45px 142px;
   }
 }

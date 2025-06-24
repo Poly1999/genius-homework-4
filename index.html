@@ -53,11 +53,6 @@
               <use href="./image/icons.svg#icon-Vector"></use>
             </svg>
           </button>
-          <div class="mobile-menu">
-            <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
-            </button>
-          </div>
         </div>
       </div>
     </header>
@@ -144,7 +139,7 @@
               </li>
               <li class="why-section__item">
                 <h3>
-                  <svg class="why__icon" width="43" height="33">
+                  <svg class="why-section__icon" width="43" height="33">
                     <use href="./image/icons.svg#icon-icon_for_section32"></use>
                   </svg>
                 </h3>
@@ -266,7 +261,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section section" id="contact-section">
+      <section class="contact-section" id="contact-section">
         <div class="container">
           <h2
             class="contact-section__title section__title section__title--centered"
@@ -274,17 +269,15 @@
             Як нас <span class="text-span">знайти</span>
           </h2>
           <div class="contact-section__container">
-            <div>
-              <iframe
-                class="contact-section__map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857434!2d30.772648477023242!3d50.50671678331028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2sTarasa%20Shevchenka%20St%2C%205%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%20Ukraine%2C%2007400!5e0!3m2!1sen!2sus!4v1746666359437!5m2!1sen!2sus"
-                width="605"
-                height="481"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+            <iframe
+              class="contact-section__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857434!2d30.772648477023242!3d50.50671678331028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2sTarasa%20Shevchenka%20St%2C%205%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%20Ukraine%2C%2007400!5e0!3m2!1sen!2sus!4v1746666359437!5m2!1sen!2sus"
+              width="605"
+              height="481"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
 
             <div class="contact-section__form">
               <p class="contact-section__text">
@@ -512,6 +505,15 @@
           </p>
         </form>
       </div>
+    </div>
+
+    <div class="mobile-menu">
+      <a href="index.html" class="header__logo">
+        <img src="./image/logobeautyzone.svg" alt="Logo Beauty Zone" />
+      </a>
+      <button class="menu-btn-close mobile-menu__btn-close" type="button">
+        Close
+      </button>
     </div>
 
     <script src="./JS/modal.js"></script>

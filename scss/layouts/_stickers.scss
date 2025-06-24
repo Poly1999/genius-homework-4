@@ -3,8 +3,17 @@
     fill: var(--color-star-1);
     animation: tiny-pulse-mobile 3s ease-in-out infinite;
     transform-origin: center center;
+    height: 40px;
+    width: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
 
     @media screen and (min-width: $bp-desktop) {
+      display: block;
+      height: 64px;
+      width: 64px;
       animation: tiny-pulse-desktop-1 3s ease-in-out infinite;
     }
   }
@@ -12,10 +21,10 @@
   @keyframes tiny-pulse-mobile {
     0%,
     100% {
-      transform: translate(100px, 120px) scale(1);
+      transform: translate(-50px, 400px) scale(1);
     }
     50% {
-      transform: translate(100px, 120px) scale(1.1);
+      transform: translate(-50px, 400px) scale(1.1);
     }
   }
 

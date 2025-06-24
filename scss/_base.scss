@@ -12,9 +12,18 @@ body {
   font-weight: 400;
   font-size: 18px;
   background-image: url(../image/background-vector.png);
-  background-position: 0 1300px;
+  background-position: -500px 650px;
   background-repeat: no-repeat;
-  background-size: contain;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-position: 0 950px;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    background-position: 0 1300px;
+    background-size: contain;
+  }
 }
 
 ul {
@@ -27,22 +36,4 @@ address {
 
 .logo img {
   height: 40px;
-}
-
-/* Sections */
-
-h2 .accent-section1 {
-  color: var(--main-blue-color);
-}
-
-h2 .accent-section3 {
-  color: var(--main-blue-color);
-}
-
-h2 .accent-section4 {
-  color: var(--main-blue-color);
-}
-
-h2 .accent-section5 {
-  color: var(--main-blue-color);
 }
