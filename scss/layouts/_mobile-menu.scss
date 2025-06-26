@@ -13,9 +13,53 @@
     transform: translateX(0);
   }
 
-  &__btn-close {
-    position: absolute;
+  &__logo {
+    position: fixed;
     top: 16px;
-    right: 24px;
+    left: 20px;
+  }
+
+  &__nav {
+    padding: 78px 212px 16px 20px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  &__icon {
+    fill: var(--main-dark-color);
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 16px;
+    padding: 0 212px 16px 20px;
+  }
+}
+
+.modal-btn-close.mobile-menu__btn-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--main-dark-color);
+  cursor: pointer;
+  line-height: 1;
+
+  @media screen and (min-width: $bp-tablet) {
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    top: 40px;
+    right: 40px;
+  }
+
+  &:hover {
+    color: var(--color-star-1);
   }
 }

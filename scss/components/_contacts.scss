@@ -93,11 +93,9 @@
 
   &__map {
     flex-shrink: 0;
-    margin: 0 -24px;
     height: 230px;
     width: 100%;
     order: 0;
-    margin: 0 -24px;
 
     @media screen and (min-width: $bp-tablet) {
       max-width: 320px;

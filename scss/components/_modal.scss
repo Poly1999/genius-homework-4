@@ -46,13 +46,26 @@
   }
 }
 
-.modal-btn-close {
+.modal-btn-close:not(.mobile-menu__btn-close) {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-footer-light);
+  cursor: pointer;
+  line-height: 1;
 
-  &__icon {
-    fill: var(--color-footer-light);
-    background-color: transparent;
+  @media screen and (min-width: $bp-tablet) {
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    top: 40px;
+    right: 40px;
+  }
+
+  &:hover {
+    color: var(--secondary-light-color);
   }
 }
