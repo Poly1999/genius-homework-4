@@ -5,6 +5,12 @@
     padding-bottom: 16px;
   }
 
+  &__title {
+    margin-bottom: 0;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
   &__container {
     display: flex;
     gap: 0;
